@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>DILOCONVINO</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+      <!-- Cabecera -->
+      <header>
+        <div class="container-fluid text-white" style="background-color:rgba(197, 31, 94, 0.329); height: 200px; margin-bottom: 0px;">
+          <svg data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            class="svg"
+            style="height: 75%; width: 100%; fill: rgba(121, 31, 31, 0.712); opacity: 0.59; transform: rotateY(180deg);">
+            <path
+              d="M1200 120L0 1 0 0 1200 0 1200 120z">
+            </path>
+          </svg>
+        </div> 
+        <img class="img-fluid" src="../img/DILOCONVINO PAG/LOGO TRANSPARENTE.png" alt="DILOCONVINO" 
+        style="max-width: 35%; height:auto; margin-top: -245px;margin-left: 68%;">
+        <!-- Menú -->
+        <div class="d-flex flex-row-reverse" 
+        style="background-color:rgb(17, 2, 10); height: 50px; margin-top: -5%;">
+          <a class="p-2 align-self-center btn btn-link material-icons"
+          style="color: white;"
+          href="#">
+            shopping_bag
+          </a>
+          <a id="login" class="p-2 align-self-center btn btn-link material-icons"
+          style="color: white;"
+          href="#">
+            account_circle
+          </a>
+          <span id="sesion" class="p-0 align-self-center" 
+          style="color: white;">
+            Iniciar Sesión
+          </span>
+        </div>
+        <div class="dropdown show">
+          <a href="#" class="btn btn-link dropdown-toggle align-self-center" 
+          role="button" id="categoria" data-toggle="dropdown"
+          style="color: rgb(255, 255, 255); margin-top: -75px;">
+            Categorías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="categoria">
+            <button class="btn btn-link dropdown-item">San Valentín</button>
+            <button class="btn btn-link dropdown-item">Día de la Madre</button>
+            <button class="btn btn-link dropdown-item">Navidad</button>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Productos -->
+      <section>
+        <div class="row">
+          <!-- Elemento 1 -->
+          <div class="col-12 col-md-6 col-lg-4 card">
+            <button class="btn btn-link" type="button"
+            data-toggle="collapse" data-target="#prueba1" aria-expanded="false" aria-controls="prueba1">
+              <img class="card-img-top img-fluid align-self-center" 
+              src="../img/prueba/WhatsApp Image 2021-04-29 at 5.20.25 PM (1).jpeg" 
+              alt="Prueba1" style="max-width: 50%; height: auto;">
+            </button>
+            <div class="card-body">
+              <h4 class="card-title align-self-center">Prueba1</h4>
+              <div class="collapse" id="prueba1">
+                <div class="card-text">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"><br>
+                      <input type="date" class="form-control" id="date">
+                      <button type="submit" class="btn btn-link material-icons" 
+                      style="color:white; background-color: rgba(85, 3, 35, 0.781); margin-left: 90%; margin-top: 2%;">
+                        add_shopping_cart
+                      </button>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento 2 -->
+          <div class="col-12 col-md-6 col-lg-4 card">
+            <button class="btn btn-link" type="button"
+            data-toggle="collapse" data-target="#prueba2" aria-expanded="false" aria-controls="prueba2">
+              <img class="card-img-top img-fluid align-self-center" 
+              src="../img/prueba/WhatsApp Image 2021-04-29 at 5.20.25 PM.jpeg" 
+              alt="Prueba1" style="max-width: 50%; height: auto;">
+            </button>
+            <div class="card-body">
+              <h4 class="card-title align-self-center">Prueba2</h4>
+              <div class="collapse" id="prueba2">
+                <div class="card-text">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"><br>
+                      <input type="date" class="form-control" id="date">
+                      <button type="submit" class="btn btn-link material-icons" 
+                      style="color:white; background-color: rgba(85, 3, 35, 0.781); margin-left: 90%; margin-top: 2%;">
+                        add_shopping_cart
+                      </button>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento 3 -->
+          <div class="col-12 col-md-6 col-lg-4 card">
+            <button class="btn btn-link" type="button"
+            data-toggle="collapse" data-target="#prueba3" aria-expanded="false" aria-controls="prueba3">
+              <img class="card-img-top img-fluid align-self-center" 
+              src="../img/prueba/WhatsApp Image 2021-04-29 at 5.20.25 PM.jpeg" 
+              alt="Prueba1" style="max-width: 50%; height: auto;">
+            </button>
+            <div class="card-body">
+              <h4 class="card-title align-self-center">Prueba3</h4>
+              <div class="collapse" id="prueba3">
+                <div class="card-text">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"><br>
+                      <input type="date" class="form-control" id="date">
+                      <button type="submit" class="btn btn-link material-icons" 
+                      style="color:white; background-color: rgba(85, 3, 35, 0.781); margin-left: 90%; margin-top: 2%;">
+                        add_shopping_cart
+                      </button>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento 1 -->
+          <div class="col-12 col-md-6 col-lg-4 card">
+            <button class="btn btn-link" type="button"
+            data-toggle="collapse" data-target="#prueba1" aria-expanded="false" aria-controls="prueba1">
+              <img class="card-img-top img-fluid align-self-center" 
+              src="../img/prueba/WhatsApp Image 2021-04-29 at 5.20.25 PM (1).jpeg" 
+              alt="Prueba1" style="max-width: 50%; height: auto;">
+            </button>
+            <div class="card-body">
+              <h4 class="card-title align-self-center">Prueba1</h4>
+              <div class="collapse" id="prueba1">
+                <div class="card-text">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"><br>
+                      <input type="date" class="form-control" id="date">
+                      <button type="submit" class="btn btn-link material-icons" 
+                      style="color:white; background-color: rgba(85, 3, 35, 0.781); margin-left: 90%; margin-top: 2%;">
+                        add_shopping_cart
+                      </button>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento 2 -->
+          <div class="col-12 col-md-6 col-lg-4 card">
+            <button class="btn btn-link" type="button"
+            data-toggle="collapse" data-target="#prueba2" aria-expanded="false" aria-controls="prueba2">
+              <img class="card-img-top img-fluid align-self-center" 
+              src="../img/prueba/WhatsApp Image 2021-04-29 at 5.20.25 PM.jpeg" 
+              alt="Prueba1" style="max-width: 50%; height: auto;">
+            </button>
+            <div class="card-body">
+              <h4 class="card-title align-self-center">Prueba2</h4>
+              <div class="collapse" id="prueba2">
+                <div class="card-text">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"><br>
+                      <input type="date" class="form-control" id="date">
+                      <button type="submit" class="btn btn-link material-icons" 
+                      style="color:white; background-color: rgba(85, 3, 35, 0.781); margin-left: 90%; margin-top: 2%;">
+                        add_shopping_cart
+                      </button>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento 3 -->
+          <div class="col-12 col-md-6 col-lg-4 card">
+            <button class="btn btn-link" type="button"
+            data-toggle="collapse" data-target="#prueba3" aria-expanded="false" aria-controls="prueba3">
+              <img class="card-img-top img-fluid align-self-center" 
+              src="../img/prueba/WhatsApp Image 2021-04-29 at 5.20.25 PM.jpeg" 
+              alt="Prueba1" style="max-width: 50%; height: auto;">
+            </button>
+            <div class="card-body">
+              <h4 class="card-title align-self-center">Prueba3</h4>
+              <div class="collapse" id="prueba3">
+                <div class="card-text">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"><br>
+                      <input type="date" class="form-control" id="date">
+                      <button type="submit" class="btn btn-link material-icons" 
+                      style="color:white; background-color: rgba(85, 3, 35, 0.781); margin-left: 90%; margin-top: 2%;">
+                        add_shopping_cart
+                      </button>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+</body>
+</html>
