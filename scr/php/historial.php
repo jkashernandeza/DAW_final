@@ -189,6 +189,7 @@ session_start();
 
             while($row = mysqli_fetch_array($pedidos_list)) {
                 $id_pedido=$row[0];
+                $band_pago=$row['pagado'];
                 $add_list = mysqli_query($link,"SELECT * FROM addresses 
                 where preferida=1 and id_user=".$_SESSION['id_user'].";");
                     while($row2 = mysqli_fetch_array($add_list)) {
@@ -211,6 +212,7 @@ session_start();
                 echo
                 "
                 <form method='POST' action='pago.php'>
+                    <input style='display:none;' name='id_pedido' id='id_pedido' value='$id_pedido'>
                     <div class='card mb-3 mx-auto d-block' style='max-width: 100%;'>
                         <div class='row justify-content-around'>
                             <div class='col-12 col-sm-6 d-flex align-items-center'>
@@ -254,10 +256,21 @@ session_start();
                         <div>
                             <div class=\"row justify-content-around\">
                                 <div class=\"col-12 row align-items-center\">
+                                ";
+                                if(!$band_pago){
+                                    echo"
                                     <button type='submit' class='btn btn-lg btn-danger mx-auto d-block' 
                                     style=' width:97%; height:auto; margin-top:15px;'>
                                         Pagar
-                                    </button>
+                                    </button>";
+                                }else{
+                                    echo"
+                                    <button disabled class='btn btn-lg btn-secondary mx-auto d-block' 
+                                    style=' width:97%; height:auto; margin-top:15px;'>
+                                        Ver Detalle de Envío
+                                    </button>";
+                                }
+                                echo"
                                 </div>
                             </div>
                         </div>

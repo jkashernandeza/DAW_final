@@ -176,6 +176,32 @@ session_start();
         <div class="jumbotron">
             Pagina en construccion
         </div>
+        <?php
+            $user = 'root';
+            $password = 'root';
+            $db = 'diloconvino';
+            $host = 'localhost';
+            $port = 3306;
+
+            $link = mysqli_init();
+            $success = mysqli_real_connect(
+            $link, 
+            $host, 
+            $user, 
+            $password, 
+            $db,
+            $port
+            );
+
+            $id_pedido = mysqli_real_escape_string($link, $_POST['id_pedido']);
+            //echo $id_pedido;
+
+            $q_uAdd="update pedidos set pagado=1 where id_pedido=$id_pedido;";
+            //echo $q_uAdd;
+            if (!mysqli_query($link,$q_uAdd)) {
+                die('Error: ' . mysqli_error($link));
+            }
+        ?>
 
         <div class='row justify-content-around'>
             <div class='col-12 row align-items-center'>
